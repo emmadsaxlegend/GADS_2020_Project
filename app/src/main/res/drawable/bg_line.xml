@@ -1,0 +1,30 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:state_focused="true" android:state_pressed="false">
+        <shape android:shape="oval">
+            <gradient android:startColor="@color/grey_black" android:endColor="@color/grey_black" android:angle="45"
+                android:centerColor="@color/colorAccent2"
+                />
+            <corners android:radius="@dimen/cornerradius_2"/>
+        </shape>
+    </item>
+    <item android:state_focused="true" android:state_pressed="true">
+        <shape android:shape="oval" >
+            <gradient android:startColor="@color/grey_black" android:centerColor="@color/colorAccent2" android:endColor="@color/grey_black" android:angle="45"/>
+            <corners android:radius="@dimen/cornerradius_2"/>
+        </shape>
+    </item>
+    <item android:state_focused="false" android:state_pressed="false" >
+        <shape android:shape="oval" >
+            <gradient android:startColor="@color/grey_black" android:centerColor="@color/colorAccent2"  android:endColor="@color/grey_black" android:angle="45"/>
+            <corners android:radius="@dimen/cornerradius_2"/>
+        </shape>
+    </item>
+    <item android:state_focused="false" android:state_pressed="true">
+        <shape android:shape="oval" >
+            <gradient android:startColor="@color/grey_black" android:centerColor="@color/colorAccent2" android:endColor="@color/grey_black" android:angle="45"/>
+            <corners android:radius="@dimen/cornerradius_2"/>
+        </shape>
+    </item>
+
+</selector>
